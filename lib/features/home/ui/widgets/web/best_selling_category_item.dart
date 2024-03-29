@@ -54,6 +54,7 @@ class _BestSellingCategoryItemState extends State<BestSellingCategoryItem> {
               Container(
                 width: 60.w,
                 height: 300.h,
+                clipBehavior: Clip.antiAliasWithSaveLayer,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(10),

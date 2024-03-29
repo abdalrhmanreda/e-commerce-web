@@ -42,5 +42,12 @@
   "careers": "Careers" ,
   "community": "Community" ,
   "shopSmartFooter": "Shop Smart, Live Better Your Marketplace Awaits!" ,
-  "products": "Products"
+  "products": "Products" ,
+  "abdalrahman": "Abdalrahman Reda" ,
+  "abdalrahmanDescription": "I am a Flutter developer and I am passionate about programming and I am always looking for new things to learn and develop my skills" ,
+  "tarek": "Tarek Aziz" ,
+   "tarekDescription": "I am a Backend developer and I am passionate about programming and I am always looking for new things to learn and develop my skills" ,
+  "flutterDeveloper": "Flutter Developer" ,
+    "backendDeveloper": "Backend Developer" ,
+  "ourTeam": "Our Team"
 }

@@ -1,5 +1,6 @@
 import 'package:e_commerce_web/config/themes/font_weight.dart';
 import 'package:e_commerce_web/core/methods/get_responsive_text/responsive_text.dart';
+import 'package:e_commerce_web/core/web/hover_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,29 +34,11 @@ class FooterInfoItem extends StatelessWidget {
                 ),
           ),
           Spacing.verticalSpace(15.h),
-          Text(
-            item1,
-            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                  color: AppColors.kGrayColor,
-                  fontSize: getResponsiveFontSize(context, fontSize: 11),
-                ),
-          ),
+          HoverText(item: item1),
           Spacing.verticalSpace(10.h),
-          Text(
-            item2,
-            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                  color: AppColors.kGrayColor,
-                  fontSize: getResponsiveFontSize(context, fontSize: 11),
-                ),
-          ),
+          HoverText(item: item2),
           Spacing.verticalSpace(10.h),
-          Text(
-            item3,
-            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                  color: AppColors.kGrayColor,
-                  fontSize: getResponsiveFontSize(context, fontSize: 11),
-                ),
-          ),
+          HoverText(item: item3),
         ],
       ),
     );
