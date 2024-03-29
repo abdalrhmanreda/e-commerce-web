@@ -12,8 +12,10 @@ class Assets {
       'assets/images/categories/Jewelry .jpg';
   static const String categoriesSportswear =
       'assets/images/categories/Sportswear.jpg';
+  static const String imagesAbdo = 'assets/images/abdo.jpg';
   static const String imagesHeadPhone = 'assets/images/head_phone.jpg';
   static const String imagesJeffTumaleSD9Jyl1xNQ4Unsplash =
       'assets/images/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg';
   static const String imagesManCloth = 'assets/images/man_cloth.jpg';
+  static const String imagesTarek = 'assets/images/tarek.jpeg';
 }

@@ -1,5 +1,6 @@
 import 'package:e_commerce_web/core/helpers/spacing.dart';
 import 'package:e_commerce_web/core/web/footer.dart';
+import 'package:e_commerce_web/features/home/ui/widgets/web/our_team.dart';
 import 'package:e_commerce_web/features/home/ui/widgets/web/photos_and_title_and_desc.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,8 @@ class WebHomeScreenBody extends StatelessWidget {
           const HighQualityAndSupportAndFreeShipping(),
           Spacing.verticalSpace(50),
           const BestSellingCategory(),
+          const OurTeam(),
+          Spacing.verticalSpace(50),
           const WebFooter(),
         ],
       ),
