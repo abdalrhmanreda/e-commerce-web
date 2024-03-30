@@ -76,6 +76,7 @@
   "helloFriend": "Hello, Friend !" ,
   "enterYourPersonalDetails": "Enter your personal details and start\nyour journey with us" ,
   "welcomeBack": "Welcome Back !" ,
-  "toKeepConnected": "To keep connected with us please login\nwith your personal info"
+  "toKeepConnected": "To keep connected with us please login\nwith your personal info" ,
+  "saleOff": "Sale Off"
 
 }
