@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       if (constraints.maxWidth > 600) {
         return const WebHomeScreen();
       } else {
-        return const MobileHomeScreen();
+        return MobileHomeScreen();
       }
     });
   }
