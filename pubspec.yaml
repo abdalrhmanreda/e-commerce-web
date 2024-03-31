@@ -77,6 +77,8 @@ dependencies:
   build_runner: ^2.4.8
   # smooth indicator
   smooth_page_indicator: ^1.1.0
+  # flutter timer
+  flutter_timer_countdown: ^1.0.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
