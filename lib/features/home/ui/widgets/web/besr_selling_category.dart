@@ -2,11 +2,11 @@ import 'package:e_commerce_web/core/constant/app_constant.dart';
 import 'package:e_commerce_web/core/helpers/spacing.dart';
 import 'package:e_commerce_web/core/methods/get_responsive_text/responsive_text.dart';
 import 'package:e_commerce_web/generated/assets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:icons_plus/icons_plus.dart';
 
 import '../../../data/models/category_model.dart';
 import 'best_selling_category_item.dart';
@@ -50,9 +50,10 @@ class BestSellingCategory extends StatelessWidget {
         image: Assets.categoriesSportswear,
       ),
     ];
+    var pageController = PageController(viewportFraction: .2, initialPage: 2);
     return SizedBox(
       width: AppConstant.deviceWidth(context),
-      height: 1000.h,
+      height: 600.h,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +66,55 @@ class BestSellingCategory extends StatelessWidget {
             ),
           ),
           Spacing.verticalSpace(25),
-          Expanded(
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {
+                  pageController.previousPage(
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                  );
+                },
+                icon: const Icon(Iconsax.arrow_left_2_outline),
+                iconSize: 30,
+                color: Colors.black,
+              ),
+              SizedBox(
+                height: 370.h,
+                width: AppConstant.deviceWidth(context) / 1.09,
+                child: PageView(
+                  pageSnapping: true,
+                  controller: pageController,
+                  children: List.generate(
+                    categories.length,
+                    (index) => BestSellingCategoryItem(
+                      title: categories[index].name,
+                      image: categories[index].image,
+                    ),
+                  ),
+                ),
+              ),
+              IconButton(
+                onPressed: () {
+                  pageController.nextPage(
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                  );
+                },
+                icon: const Icon(Iconsax.arrow_right_3_outline),
+                iconSize: 30,
+                color: Colors.black,
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+/*
+*
+*           Expanded(
             child: GridView.builder(
               padding: EdgeInsets.symmetric(horizontal: 5.w),
               shrinkWrap: true,
@@ -83,8 +132,5 @@ class BestSellingCategory extends StatelessWidget {
               ),
             ),
           )
-        ],
-      ),
-    );
-  }
-}
+
+* */

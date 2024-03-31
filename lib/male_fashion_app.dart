@@ -1,9 +1,10 @@
 import 'package:e_commerce_web/config/routes/router.dart';
-import 'package:e_commerce_web/config/routes/routes_path.dart';
 import 'package:e_commerce_web/config/themes/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'config/routes/routes_path.dart';
 
 class MaleFashionApp extends StatelessWidget {
   final AppRouter appRouter;

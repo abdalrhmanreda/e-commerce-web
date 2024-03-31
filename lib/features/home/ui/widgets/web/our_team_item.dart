@@ -25,6 +25,10 @@ class OurTeamItem extends StatelessWidget {
         horizontal: 2.w,
         vertical: 10.h,
       ),
+      margin: EdgeInsets.symmetric(
+        horizontal: 10.w,
+        vertical: 10.h,
+      ),
       height: 300.h,
       width: AppConstant.deviceWidth(context) / 2.5,
       decoration: BoxDecoration(

@@ -34,6 +34,7 @@ class _BestSellingCategoryItemState extends State<BestSellingCategoryItem> {
         });
       },
       child: Container(
+        width: 60.w,
         clipBehavior: Clip.antiAliasWithSaveLayer,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

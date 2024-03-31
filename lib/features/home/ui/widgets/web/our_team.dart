@@ -1,4 +1,5 @@
 import 'package:e_commerce_web/config/themes/font_weight.dart';
+import 'package:e_commerce_web/core/constant/app_constant.dart';
 import 'package:e_commerce_web/core/helpers/spacing.dart';
 import 'package:e_commerce_web/core/methods/get_responsive_text/responsive_text.dart';
 import 'package:e_commerce_web/features/home/ui/widgets/web/our_team_item.dart';
@@ -13,6 +14,10 @@ class OurTeam extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var pageController = PageController(
+      viewportFraction: .5,
+      initialPage: 1,
+    );
     return SizedBox(
       height: 400.h,
       width: MediaQuery.of(context).size.width,
@@ -26,23 +31,37 @@ class OurTeam extends StatelessWidget {
                 ),
           ),
           Spacing.verticalSpace(35),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              OurTeamItem(
-                name: AppLocalizations.of(context)!.abdalrahman,
-                description:
-                    AppLocalizations.of(context)!.abdalrahmanDescription,
-                image: Assets.imagesAbdo,
-                jobTitle: AppLocalizations.of(context)!.flutterDeveloper,
+          Expanded(
+            child: SizedBox(
+              width: AppConstant.deviceWidth(context),
+              child: PageView(
+                allowImplicitScrolling: true,
+                scrollDirection: Axis.horizontal,
+                controller: pageController,
+                children: [
+                  OurTeamItem(
+                    name: AppLocalizations.of(context)!.tarek,
+                    description: AppLocalizations.of(context)!.tarekDescription,
+                    image: Assets.imagesTarek,
+                    jobTitle: AppLocalizations.of(context)!.backendDeveloper,
+                  ),
+                  OurTeamItem(
+                    name: AppLocalizations.of(context)!.abdalrahman,
+                    description:
+                        AppLocalizations.of(context)!.abdalrahmanDescription,
+                    image: Assets.imagesAbdo,
+                    jobTitle: AppLocalizations.of(context)!.flutterDeveloper,
+                  ),
+                  OurTeamItem(
+                    name: AppLocalizations.of(context)!.mohamedAbdullah,
+                    description:
+                        AppLocalizations.of(context)!.abdalrahmanDescription,
+                    image: Assets.imagesMohamed,
+                    jobTitle: AppLocalizations.of(context)!.flutterDeveloper,
+                  ),
+                ],
               ),
-              OurTeamItem(
-                name: AppLocalizations.of(context)!.tarek,
-                description: AppLocalizations.of(context)!.tarekDescription,
-                image: Assets.imagesTarek,
-                jobTitle: AppLocalizations.of(context)!.backendDeveloper,
-              ),
-            ],
+            ),
           ),
         ],
       ),

@@ -41,4 +41,5 @@ class AppColors {
   static const Color kFooterColor = Color(0xff322929);
   static const Color kTitleColorHover = Color(0xffac3242);
   static const Color kButtonColor = Color(0xff322929);
+  static const Color kTanColoe = Color(0xfff4f2ec);
 }
