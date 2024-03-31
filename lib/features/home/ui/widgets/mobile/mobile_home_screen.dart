@@ -11,6 +11,7 @@ import '../../../../../config/colors/app_colors.dart';
 import '../../../../../config/themes/font_weight.dart';
 import '../../../../../core/methods/get_responsive_text/responsive_text.dart';
 import 'cat_and_related_photo.dart';
+import 'footer_mobile.dart';
 import 'mobile_best_selling.dart';
 import 'mobile_high_quality.dart';
 import 'mobile_image_and_title_and_desc.dart';
@@ -93,6 +94,8 @@ class MobileHomeScreen extends StatelessWidget {
                   const TimerPartMobile(),
                   Spacing.verticalSpace(20),
                   const MobileOurTeam(),
+                  Spacing.verticalSpace(20),
+                  const MobileFooter()
                 ],
               ),
             ),
