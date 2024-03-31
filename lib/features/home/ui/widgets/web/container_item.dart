@@ -19,7 +19,7 @@ class ContainerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10.w),
+        padding: EdgeInsets.symmetric(horizontal: 3.w),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,11 +28,11 @@ class ContainerItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Icon(icon),
-                Spacing.horizontalSpace(10),
+                Spacing.horizontalSpace(5),
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: getResponsiveFontSize(context, fontSize: 16),
+                    fontSize: getResponsiveFontSize(context, fontSize: 12),
                     fontWeight: FontWeight.bold,
                   ),
                 ),

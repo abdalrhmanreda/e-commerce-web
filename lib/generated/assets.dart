@@ -12,14 +12,17 @@ class Assets {
       'assets/images/categories/Jewelry .jpg';
   static const String categoriesSportswear =
       'assets/images/categories/Sportswear.jpg';
-  static const String imagesAbdo = 'assets/images/abdo.jpg';
-  static const String imagesClothing = 'assets/images/clothing.png';
-  static const String imagesGlasess = 'assets/images/glasess.png';
+  static const String imagesAbdo = 'assets/images/abdo.jpeg';
+  static const String imagesClothing = 'assets/images/Clothing.jpeg';
+  static const String imagesGlasess = 'assets/images/Glasess.jpeg';
+
+
   static const String imagesHeadPhone = 'assets/images/head_phone.jpg';
   static const String imagesJeffTumaleSD9Jyl1xNQ4Unsplash =
       'assets/images/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg';
   static const String imagesManBag = 'assets/images/man_bag.png';
   static const String imagesManCloth = 'assets/images/man_cloth.jpg';
+
   static const String imagesManShoes = 'assets/images/man_shoes.png';
   static const String imagesMohamed = 'assets/images/mohamed.jpeg';
   static const String imagesTarek = 'assets/images/tarek.jpeg';
