@@ -196,10 +196,10 @@ class MobileHomeScreen extends StatelessWidget {
                     ),
                   ),
                   ProfileCard(
-                    imageAsset: Assets.imagesMohammed,
+                    imageAsset: Assets.imagesMohamed,
                     description:
                         AppLocalizations.of(context)!.abdalrahmanDescription,
-                    name: AppLocalizations.of(context)!.mohammed,
+                    name: AppLocalizations.of(context)!.mohamedAbdullah,
                     track: AppLocalizations.of(context)!.flutterDeveloper,
                   ),
                   ProfileCard(
