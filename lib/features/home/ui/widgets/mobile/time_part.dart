@@ -8,8 +8,8 @@ import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
 
 import '../../../../../config/colors/app_colors.dart';
 
-class TimerPart extends StatelessWidget {
-  const TimerPart({
+class TimerPartMobile extends StatelessWidget {
+  const TimerPartMobile({
     super.key,
   });
 

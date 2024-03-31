@@ -2,21 +2,20 @@ import 'package:e_commerce_web/config/themes/font_weight.dart';
 import 'package:e_commerce_web/core/helpers/spacing.dart';
 import 'package:e_commerce_web/core/methods/get_responsive_text/responsive_text.dart';
 import 'package:e_commerce_web/generated/assets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../../config/colors/app_colors.dart';
 
-class ImageOffering extends StatefulWidget {
-  const ImageOffering({Key? key});
+class ImageOfferingMobile extends StatefulWidget {
+  const ImageOfferingMobile({super.key});
 
   @override
-  State<ImageOffering> createState() => _ImageOfferingState();
+  State<ImageOfferingMobile> createState() => _ImageOfferingMobileState();
 }
 
-class _ImageOfferingState extends State<ImageOffering> {
+class _ImageOfferingMobileState extends State<ImageOfferingMobile> {
   List<String> images = [
     Assets.imagesClothing,
     Assets.imagesGlasess,

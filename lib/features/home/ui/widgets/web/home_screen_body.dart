@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'besr_selling_category.dart';
 import 'high_quality_and_support_and_free_shipping.dart';
+import 'home_products.dart';
 
 class WebHomeScreenBody extends StatelessWidget {
   const WebHomeScreenBody({super.key});
@@ -25,6 +26,8 @@ class WebHomeScreenBody extends StatelessWidget {
           const HomeBagOffer(),
           Spacing.verticalSpace(50),
           const OurTeam(),
+          Spacing.verticalSpace(50),
+          const HomeProducts(),
           Spacing.verticalSpace(50),
           const WebFooter(),
         ],
